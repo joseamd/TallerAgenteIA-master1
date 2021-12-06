@@ -79,21 +79,27 @@ class CleanerProblem extends Problem {
         let rigth;
         let down;
         let muro=1000000;
-
+        //let variable;
+        //let tamano;
         
-        let result = [];        
+        let result = [];    
+            
 
         if(typeof agentState.mapa == 'undefined'){
 
             /**console.log("mapa:", typeof agentState.mapa)*/
-            agentState.mapa = Array.from(Array(13), ()=> new Array(13));
+            agentState.mapa = Array.from(Array(13), ()=> new Array(13)); //Defino tamaño mapa
             
             for(var i=0;i<agentState.mapa.length ;i++){
                 for(var j=0;j<agentState.mapa[i].length;j++){
+                    //tamano = agentState.mapa.length;
+                    //console.log("dato a imprimir valor: "+ tamano)
 
                     if(i>0){
                         if(j>0){
-                            if(i<=map.length  && j<=map[0].length){
+                            if(i<=map.length  && j<=map.length){
+                                //variable = map.length;
+                                //console.log("dato a imprimir valor: "+ variable)
                                 if(map[i-1][j-1]==1){
                                     agentState.mapa[i][j]=muro;
                                 }else{

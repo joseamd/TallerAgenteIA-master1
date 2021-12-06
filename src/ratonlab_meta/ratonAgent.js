@@ -15,7 +15,7 @@ class CleanerAgent extends Agent {
             "0,0,1,1,0": "LEFT",
             "0,1,0,0,0": "LEFT",
             "0,1,0,1,0": "RIGHT",
-            "0,1,1,0,0": "LEFT",
+            "0,1,1,0,0": "LEFT", //LINEA MODIFICADA
             "0,1,1,1,0": "LEFT",
             "1,0,0,0,0": "UP",
             "1,0,0,1,0": "RIGHT",

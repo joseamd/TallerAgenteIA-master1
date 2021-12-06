@@ -3,7 +3,7 @@ const RatonAgent = require('./RatonAgent');
 
 let myProblem = new RatonProblem({ maxIterations: 12 });
 /** 1,0 */
-myProblem.addAgent("Smith", RatonAgent, { x: 0, y: 2 });
+myProblem.addAgent("Smith", RatonAgent, { x: 0, y: 1 });
 myProblem.solve([
     [0, 0, 0, 0],
     [0, 1, 1, -1],
@@ -16,7 +16,7 @@ myProblem.solve([
         let world = JSON.parse(JSON.stringify(result.data.world));
         let agentState = result.data.states[agentID];
         world[agentState.y][agentState.x] = "X"
-        status = 1;
+        let status = 1;
         for (let line of world) {
             console.log(line)
             for (let cell of line)

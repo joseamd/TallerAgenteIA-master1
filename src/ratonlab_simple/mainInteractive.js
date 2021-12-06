@@ -3,7 +3,7 @@ const RatonAgent = require('./ratonAgent');
 
 let myProblem = new RatonProblem({ maxIterations: 12 });
 
-myProblem.addAgent("Smith", RatonAgent, { x: 0, y: 2 });
+myProblem.addAgent("Smith", RatonAgent, { x: 3, y: 0 });
 let iterator = myProblem.interactiveSolve([
     [0, 0, 0, 0],
     [0, 1, 1, -1],
